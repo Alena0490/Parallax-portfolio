@@ -44,12 +44,18 @@ html {
     display: block;
     position: relative;
     z-index: 0;
-    height: 328vw;
+    height: 350vw;
+}
+
+@media (max-width: 1260px) {
+    .parallax {
+        min-height: 385vw; ;
+    }
 }
 
 @media (orientation: portrait) {
     .parallax {
-        height: 510vw;
+        height: 850vw;
     }
 }
 
@@ -148,8 +154,8 @@ html {
     width: 57.2857142857vw;
     height: 24.7857142857vw;
     transform: translate3d(-50%, -50%, -0.21px) scale(1.21);
-    left: 75.41vw;
-    top: 73vw;
+    left: 78.41vw;
+    top: 69vw;
 }
 
 @media (orientation: portrait) {
@@ -167,7 +173,7 @@ html {
     height: 26.7142857143vw;
     transform: translate3d(-50%, -50%, -0.16px) scale(1.16);
     left: 23.32vw;
-    top: 174.65vw;
+    top: 176.65vw;
 }
 
 @media (orientation: portrait) {
@@ -223,7 +229,7 @@ html {
     height: 8.4821428571vw;
     transform: translate3d(-50%, -50%, -0.52px) scale(1.52);
     left: 103.2vw;
-    top: 23vw;
+    top: 27vw;
 }
 
 @media (orientation: portrait) {
@@ -383,8 +389,8 @@ html {
     }
 }
 
-.prlx-obj-dead-pig {
-    background: url('jpg/bg/dead-pig-min.png') no-repeat center center;
+.prlx-obj-web-elements {
+    background: url('jpg/bg/web-elements.png') no-repeat center center;
     background-size: 100% auto;
     width: 25.5vw;
     height: 7.7142857143vw;
@@ -402,8 +408,8 @@ html {
     }
 }
 
-.prlx-obj-tram-bench {
-    background: url('jpg/bg/tram-bench-min.png') no-repeat center center;
+.prlx-obj-placard {
+    background: url('jpg/bg/placard.png') no-repeat center center;
     background-size: 100% 100%;
     width: 42.4285714286vw;
     height: 16.0714285714vw;

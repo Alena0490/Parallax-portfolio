@@ -128,7 +128,7 @@ header {
     width: 100%;
     background: 
         linear-gradient(transparent, black),
-        url(jpg/art1.webp);
+        url(jpg/art-settup.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -241,14 +241,19 @@ p {
     font-size: 1.25rem;
     font-family: Tahoma, Verdana, sans-serif;
     margin: 1rem 0 0 0;
+    text-shadow: 2px 2px 2px var(--shadows);
+    /* background-color: var(--shadows); */
+    padding: 6px;
+    border-radius: 6px;
 }
 
 img:not(.icon) {
     max-width: 100%;
     border-radius: 0.273rem;
     /* shadows */
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-    box-shadow: rgb(73, 79, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, var(--secondary-color) 0px 0px 0px 15px;
+    /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    box-shadow: rgb(73, 79, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, var(--secondary-color) 0px 0px 0px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 figure {
@@ -277,12 +282,15 @@ div.feature.git {
 }
 
 .feature h2 {
-    color: var(--secondary-color);
+    color: var(--secondary-color-link);
 }
 
 .feature .content {
     position: relative;
     bottom: 2rem;
+    /* background-color: var(--shadows); */
+    border-radius: 6px;
+    padding: 0 2rem;
 }
 
 footer {
@@ -296,6 +304,14 @@ footer {
 
 .footer-item {
     padding: 4rem 0;
+}
+
+.footer-item a {
+    transition: all 0.6s ease-in;
+}
+
+.footer-item a:not(.discord a):hover {
+    color: var(--secondary-color-link-hover);
 }
 
 .network {
@@ -353,7 +369,7 @@ footer {
 
 input, button {
     all: unset;
-    color: black;
+    color: white;
     outline: none;
     font-size: inherit;
     font-family: inherit;
@@ -387,7 +403,7 @@ input, button {
 }
 
 .discord-ico {
-    filter: brightness(10);
+    filter: invert(100%);
     height: 2rem;
     padding-right: 0.4rem;
     position: relative;
@@ -429,10 +445,10 @@ input, button {
         justify-content: flex-start;
         background: 
             linear-gradient(transparent, black),
-            url(jpg/art1.webp);
+            url(jpg/art-settup.png);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: bottom center;
         background-attachment: fixed;
     }
 
@@ -489,7 +505,7 @@ input, button {
         align-items: center;
         gap: 3vw;
         margin-bottom: 10rem;
-        border-right: 0.75rem solid var(--secondary-color);
+        border-right: 0.75rem solid var(--secondary-color-link);
     }
 
     div.feature.git {
@@ -503,7 +519,7 @@ input, button {
 
     .feature:nth-child(even) {
         flex-direction: row-reverse;
-        border-left: 0.75rem solid var(--secondary-color);
+        border-left: 0.75rem solid var(--secondary-color-link);
         border-right: none;
     }
 
@@ -515,7 +531,7 @@ input, button {
     .feature .content {
         flex: 3;
         position: static;
-        padding: 0 2rem;
+        padding: 1 2rem;
     }
 
     .us {
