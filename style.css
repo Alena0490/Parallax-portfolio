@@ -109,7 +109,7 @@ html.dark {
 
 html {
     font-size: 100%;
-    line-height: 1.15;
+    line-height: 1.4;
     scroll-behavior: smooth;
 }
 
@@ -170,7 +170,7 @@ header {
         .main-nav a img {
             /* filter: invert(100%); */
             display: none;
-            height:  2.75rem;
+            height:  3rem;
             width: auto;
             margin-right: 1rem;
         }
@@ -279,6 +279,15 @@ div.feature.git {
     background-color: var(--hr-color);
     padding: 2rem;
     margin-bottom: 4rem;
+}
+
+div.feature.git a {
+    color: var(--secondary-color-link);
+    transition: all 0.6s ease-in;
+}
+
+div.feature.git a:hover {
+    color: var(--secondary-color-link-hover);
 }
 
 .feature h2 {
@@ -472,12 +481,16 @@ input, button {
 
      .main-nav a img {
             display: inline;
-            height:  2.75rem;
+            height:  5rem;
             width: auto;
             padding-right: 1rem;
             margin: auto;
             margin-bottom: -6px;
+            transition: all 0.6s ease-in;
+        }
 
+        .main-nav a img:hover {
+            transform: scale(1.04);
         }
 
      .main-nav .menu {
@@ -521,6 +534,10 @@ input, button {
         flex-direction: row-reverse;
         border-left: 0.75rem solid var(--secondary-color-link);
         border-right: none;
+    }
+
+    .feature:last-of-type {
+        border: none;
     }
 
     .feature figure {

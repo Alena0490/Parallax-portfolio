@@ -37,6 +37,7 @@ html {
     overflow-y: auto;
     scroll-behavior: smooth;
     --scroll-behavior: smooth;
+    background-color: black;
 }
 
 .parallax {
@@ -45,6 +46,8 @@ html {
     position: relative;
     z-index: 0;
     height: 350vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    /* background-color: rgba(0, 0, 0, 0.4); */
 }
 
 @media (max-width: 1260px) {
