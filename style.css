@@ -219,7 +219,7 @@ h1, h2, h3 {
 h1 {
     font-size: clamp(1.75rem, 10vw, 3.5rem);
     top: 0%;
-    color: var(--secondary-color);
+    color: var(--secondary-color-link);
     left: 0;
     max-height: fit-content;
     z-index: 3;
